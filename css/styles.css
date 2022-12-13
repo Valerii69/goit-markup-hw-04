@@ -44,6 +44,18 @@ body {
 
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}    
  /* outline: 1px solid olive; */
 
 .contacts-section {
@@ -167,11 +179,13 @@ address {
     color: var(--primary-text-color);
 }
 
-/* .top-adress:hover,
-.top-adress:focus {
-    color: var(--white-color);
-    background-color: #188CE8;
-} */
+/* .link-header {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    } */
 
 
 .item-icon {
@@ -200,37 +214,7 @@ address {
     background-size: cover;
 }
 
-
-
-/* .list-item:{
-   
-    
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-.slide-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Brainstorm-foto.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-
-.hero-button {
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    padding: 10px 32px;
-    min-width: 216px;
-    /* margin-bottom: 200px; */
+/* .list-item: */
 
  
 .hero-button {
@@ -252,10 +236,6 @@ address {
 }
 
 
-
-
-
-
 /* Page-header */
 .page-header {
     background-color:var(--background-color-page);
@@ -268,11 +248,7 @@ address {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* margin-top: 0px;
-    margin-bottom: 0px; */
-    width: 1200px;
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
+        width: 1200px;
 
 }
 
@@ -294,9 +270,7 @@ address {
     margin-bottom: 94px;
 }
 
-/* .main-nav {
-    
-} */
+/* main-nav */
 
 
 .main-nav {
@@ -374,22 +348,14 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
-/* .link-header.item {
-   
-} */
+
 
 .mailtel-list .link-header {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.link-header {
-text-decoration: none;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-color: var(--title-text-color);
-}
+
 
 .link-footer {
     text-decoration: none;
@@ -409,17 +375,14 @@ margin-top: 9px;
     cursor: pointer;  
 }
 
-
-
 ul { 
     list-style: none;
 }
 
 .site-nav {
     display: flex;
-    /* align-items: center; */
     flex-wrap: nowrap
- /* margin-left: 93px;  */
+
 
 }
 
@@ -427,11 +390,9 @@ ul {
     display:block;
 }
 
-
 .item + .item {
     margin-left: 50px;
 }
-
 
 .link-header {
 align-self: flex-start;
@@ -479,11 +440,24 @@ align-self: flex-start;
     margin-left: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+ /* соцсети команды */
 
-.subsubtitle {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.time-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--color-social-link);
 }
+
+.time-social-link:hover,
+.time-social-link:focus  {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+}
+
 
 .work-list {
    display: flex;
@@ -545,12 +519,12 @@ align-self: flex-start;
 .link-header:focus,
 .top-adress:hover,
 .top-adress:focus
-.item-icon:hover,
-.item-icon:focus
 
 {
 color: var(--accent-color);
+fill: var(--accent-color);
 }
+
 
 /* email tel list */
 .mailtel {
@@ -562,8 +536,7 @@ color: var(--accent-color);
     margin-left: 50px;   
    }
 
-
-
+ 
 
 
 .mailtel-list {
@@ -903,7 +876,7 @@ padding-bottom: 0px;
 .footer {
     height: 252px;
     background: var(--color-section);
-    padding-top: 60px;
+    padding-top: 0px;
     padding-bottom: 60px;
 }
 .footer-section {
