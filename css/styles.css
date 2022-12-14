@@ -38,7 +38,7 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    height: 600px;
+    /* height: 600px; */
     margin: 0 auto 0 auto;
     background-color: var(--color-hero-background);
 
@@ -69,7 +69,7 @@ body {
 }  */
 .addressa .mail {
     padding-bottom: 0px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 9px;
     font-size: 14px;
     line-height: 1.7;
@@ -78,6 +78,8 @@ body {
 
     
 }
+
+
 .site-address {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -125,7 +127,11 @@ img {
 /* Свойства для обнуления курсива у address */
 address {
 	font-style: normal;
+    margin-top: 20px;
 }
+
+
+
 /* обнуление маржинов у ul */
 .site-nav,
 .contacts {
@@ -222,6 +228,7 @@ address {
     border: 1px solid transparent;
     padding: 10px 32px;
     min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* margin-bottom: 200px; */
 }
  
@@ -288,7 +295,7 @@ address {
     border-bottom: 1px solid var(--border-color-page);
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-right: 15px;
+    padding-right: 0px;
     /* margin-left:; */
 
 }
@@ -508,6 +515,7 @@ align-self: flex-start;
 .professions {
     margin-bottom: 0px;
     padding-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 .site-nav .current {
@@ -655,9 +663,11 @@ padding-bottom: 0px;
     display: block;
 }
 
-.project-box:hover {
+.project-box:hover,
+.project-box:focus  {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
     }
+    
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -806,7 +816,6 @@ padding-bottom: 30px;
 }
 
 
-
 .clients-block {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -836,6 +845,12 @@ padding-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: var(--color-social-link);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .footer {
@@ -974,6 +989,13 @@ margin-right: 8px;
 .button-filter:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+}
+
+.link-footer:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
 }
 
 .footer-social {
